@@ -108,34 +108,29 @@
 
 <script>
 
-	function run()
+function run()
 	{
-		var code = document.getElementById("code").value;
-		var result_box = document.getElementById("result");
-		result_box.innerHTML = code;
-		var code_box = document.getElementById("code-box");
-		code_box.style.display = "none";
-		var ans = document.getElementById("show");
-		ans.style.display = "block";
-		var btn = document.getElementById("btn");
-		btn.style.display = "none";
-		var b_btn = document.getElementById("icon");
-		b_btn.style.display = "block";
+		const code = document.getElementById("code").value;
+		const result_box = document.getElementById("result");
+		result_box.innerHTML = code; // Display the code in the result box
+
+		document.getElementById("code-box").style.display = "none";
+		document.getElementById("show").style.display = "block";
+		document.getElementById("btn").style.display = "none";
+		document.getElementById("icon").style.display = "block";
 	}
 
 	function back()
 	{
-		var ans = document.getElementById("show");
-		ans.style.display = "none";
-		var b_btn = document.getElementById("icon");
-		b_btn.style.display = "none";
+		document.getElementById("show").style.display = "none";
+		document.getElementById("icon").style.display = "none";
 		var code_box = document.getElementById("code-box");
 		code_box.style.display = "block";
 		code_box.setAttribute("class","animate__animated animate__slideInLeft");
 		var btn = document.getElementById("btn");
 		btn.style.display = "block";
 	}
-
+	
 </script>
 </body>
 </html>
